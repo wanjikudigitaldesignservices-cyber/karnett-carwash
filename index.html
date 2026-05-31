@@ -1,97 +1,92 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Karnett Carwash & Accessories Karen | Car Wash + Car Accessories Nairobi</title>
-    <meta name="description" content="Full-service carwash and car accessories in Karen. Seat covers, mats, dash cams, car care. Open 8AM–8PM daily. Call +254 742 290939.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Karnett Carwash &amp; Accessories Karen | Car Wash + Car Accessories Nairobi</title>
+<meta content="Full-service carwash and car accessories in Karen. Seat covers, mats, dash cams, car care. Open 8AM–8PM daily. Call +254 742 290939." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav class="navbar" id="navbar"><div class="nav-container">
-        <a href="#home" class="nav-logo">Karnett<span class="accent">.</span></a>
-        <ul class="nav-links" id="navLinks"><li><a href="#home" class="nav-link active">Home</a></li><li><a href="#carwash" class="nav-link">Carwash</a></li><li><a href="#shop" class="nav-link">Accessories</a></li><li><a href="#deals" class="nav-link">Deals</a></li><li><a href="#contact" class="nav-link">Contact</a></li></ul>
-        <a href="https://wa.me/254742290939" class="nav-cta" target="_blank">WhatsApp</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div></nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">⭐ 4.4 Google Rating • Open 8AM–8PM Daily</div>
-            <h1>Two Businesses.<br>One <span class="accent">Destination.</span></h1>
-            <p class="hero-sub">Professional carwash AND car accessories shop. Clean your car, accessorise it, and go.</p>
-            <div class="hero-split">
-                <a href="#carwash" class="split-card wash"><span class="split-icon">🚿</span><h3>CAR WASH</h3><p>Book a wash →</p></a>
-                <a href="#shop" class="split-card shop"><span class="split-icon">🛒</span><h3>ACCESSORIES</h3><p>Shop now →</p></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="carwash" class="section">
-        <div class="container"><div class="section-header"><span class="tag">🚿 Carwash</span><h2>Car Wash Packages</h2></div>
-        <div class="pkg-grid">
-            <div class="pkg"><h3>Basic Wash</h3><p>Exterior hand wash and dry</p><a href="#" class="btn btn-small" onclick="bookWash('Basic Wash');return false">Book</a></div>
-            <div class="pkg featured"><h3>Full Valet</h3><p>Exterior + interior complete wash</p><a href="#" class="btn btn-primary" onclick="bookWash('Full Valet');return false">Book</a></div>
-            <div class="pkg"><h3>Premium Detail</h3><p>Full valet + wax + engine bay</p><a href="#" class="btn btn-small" onclick="bookWash('Premium Detailing');return false">Book</a></div>
-            <div class="pkg"><h3>Express Wash</h3><p>Quick 20-min exterior wash</p><a href="#" class="btn btn-small" onclick="bookWash('Express Wash');return false">Book</a></div>
-        </div>
-        <div class="book-form-wrap" id="washBooking" style="display:none">
-            <h3>Book Carwash</h3>
-            <form id="washForm">
-                <div class="form-row"><div class="form-group"><label>Name *</label><input type="text" name="name" required></div><div class="form-group"><label>Phone *</label><input type="tel" name="phone" required></div></div>
-                <div class="form-row"><div class="form-group"><label>Car</label><input type="text" name="car"></div><div class="form-group"><label>Package</label><input type="text" name="service" id="washSvc" readonly></div></div>
-                <div class="form-row"><div class="form-group"><label>Date</label><input type="date" name="date"></div><div class="form-group"><label>Time</label><input type="time" name="time"></div></div>
-                <button type="submit" class="btn btn-primary btn-full">Book Now</button>
-            </form>
-        </div></div>
-    </section>
-
-    <section id="shop" class="section shop-section">
-        <div class="container"><div class="section-header"><span class="tag">🛒 Shop</span><h2>Car Accessories</h2><p>Browse our range. Order via WhatsApp.</p></div>
-        <div class="cat-filter" id="catFilter">
-            <button class="cat-btn active" data-cat="all">All</button>
-            <button class="cat-btn" data-cat="fresheners">Fresheners</button>
-            <button class="cat-btn" data-cat="covers">Seat Covers</button>
-            <button class="cat-btn" data-cat="mats">Floor Mats</button>
-            <button class="cat-btn" data-cat="electronics">Electronics</button>
-            <button class="cat-btn" data-cat="care">Car Care</button>
-        </div>
-        <div class="products-grid" id="productsGrid">
-            <div class="product" data-cat="fresheners"><div class="product-img">Air Freshener</div><h4>Premium Car Freshener</h4><p>Long-lasting scent</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Premium%20Car%20Freshener" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="covers"><div class="product-img">Seat Covers</div><h4>Leather Seat Covers</h4><p>Universal fit, premium leather</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Leather%20Seat%20Covers" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="mats"><div class="product-img">Floor Mats</div><h4>Rubber Floor Mats</h4><p>Heavy-duty, custom fit</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Rubber%20Floor%20Mats" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="electronics"><div class="product-img">Dash Cam</div><h4>HD Dash Camera</h4><p>1080p, night vision, loop recording</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20HD%20Dash%20Camera" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="care"><div class="product-img">Car Wax</div><h4>Premium Car Wax</h4><p>Long-lasting shine and protection</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Premium%20Car%20Wax" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="electronics"><div class="product-img">Phone Mount</div><h4>Magnetic Phone Mount</h4><p>360° rotation, strong hold</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Phone%20Mount" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="covers"><div class="product-img">Steering Cover</div><h4>Steering Wheel Cover</h4><p>Anti-slip, comfortable grip</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Steering%20Cover" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-            <div class="product" data-cat="care"><div class="product-img">Car Shampoo</div><h4>Foam Car Shampoo</h4><p>pH neutral, high foam</p><a href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Car%20Shampoo" class="btn btn-small" target="_blank">Order on WhatsApp</a></div>
-        </div></div>
-    </section>
-
-    <section id="deals" class="section deals-section">
-        <div class="container"><div class="section-header light"><span class="tag">🎁 Deals</span><h2>Wash + Accessories Combos</h2></div>
-        <div class="deals-grid">
-            <div class="deal"><h3>Fresh & Clean</h3><p>Full Valet + 2 Air Fresheners</p><span class="deal-save">Save 20%</span></div>
-            <div class="deal featured"><h3>Full Makeover</h3><p>Premium Detail + Seat Covers + Floor Mats</p><span class="deal-save">Best Value</span></div>
-            <div class="deal"><h3>Tech Upgrade</h3><p>Basic Wash + Dash Cam + Phone Mount</p><span class="deal-save">Save 15%</span></div>
-        </div></div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container"><div class="section-header"><span class="tag">📍</span><h2>Find Us in Karen</h2></div>
-        <div class="contact-grid">
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955!2d36.7!3d-1.32" width="100%" height="350" style="border:0;border-radius:12px" loading="lazy"></iframe></div>
-            <div class="contact-info">
-                <div class="ci"><h4>📍</h4><p>Karen, Nairobi</p></div>
-                <div class="ci"><h4>📞</h4><p><a href="tel:+254742290939">+254 742 290939</a></p></div>
-                <div class="ci"><h4>🕐</h4><p>Mon–Sun 8:00AM – 8:00PM</p></div>
-                <a href="https://wa.me/254742290939" class="btn btn-primary btn-full" target="_blank">💬 WhatsApp</a>
-            </div>
-        </div></div>
-    </section>
-
-    <footer class="footer"><div class="container"><p>© 2024 Karnett Carwash & Accessories Karen. <a href="admin.html">Admin</a></p></div></footer>
-    <a href="https://wa.me/254742290939" class="whatsapp-float" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.685-1.367A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.678-6.293-1.843l-.44-.282-3.065.894.826-3.14-.293-.454A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg></a>
-    <div class="toast" id="toast"></div>
-    <script src="script.js"></script>
+<nav class="navbar" id="navbar"><div class="nav-container">
+<a class="nav-logo" href="#home">Karnett<span class="accent">.</span></a>
+<ul class="nav-links" id="navLinks"><li><a class="nav-link active" href="#home">Home</a></li><li><a class="nav-link" href="#carwash">Carwash</a></li><li><a class="nav-link" href="#shop">Accessories</a></li><li><a class="nav-link" href="#deals">Deals</a></li><li><a class="nav-link" href="#contact">Contact</a></li></ul>
+<a class="nav-cta" href="https://wa.me/254742290939" target="_blank">WhatsApp</a>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div></nav>
+<section class="hero" id="home" style=" background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://loremflickr.com/1200/800/premium,car,interior?lock=100') !important; background-size: cover !important; background-position: center !important;">
+<div class="hero-content">
+<div class="hero-badge">⭐ 4.4 Google Rating • Open 8AM–8PM Daily</div>
+<h1>Two Businesses.<br/>One <span class="accent">Destination.</span></h1>
+<p class="hero-sub">Professional carwash AND car accessories shop. Clean your car, accessorise it, and go.</p>
+<div class="hero-split">
+<a class="split-card wash" href="#carwash"><span class="split-icon">🚿</span><h3>CAR WASH</h3><p>Book a wash →</p></a>
+<a class="split-card shop" href="#shop"><span class="split-icon">🛒</span><h3>ACCESSORIES</h3><p>Shop now →</p></a>
+</div>
+</div>
+</section>
+<section class="section" id="carwash">
+<div class="container"><div class="section-header"><span class="tag">🚿 Carwash</span><h2>Car Wash Packages</h2></div>
+<div class="pkg-grid">
+<div class="pkg"><h3>Basic Wash</h3><p>Exterior hand wash and dry</p><a class="btn btn-small" href="#" onclick="bookWash('Basic Wash');return false">Book</a></div>
+<div class="pkg featured"><h3>Full Valet</h3><p>Exterior + interior complete wash</p><a class="btn btn-primary" href="#" onclick="bookWash('Full Valet');return false">Book</a></div>
+<div class="pkg"><h3>Premium Detail</h3><p>Full valet + wax + engine bay</p><a class="btn btn-small" href="#" onclick="bookWash('Premium Detailing');return false">Book</a></div>
+<div class="pkg"><h3>Express Wash</h3><p>Quick 20-min exterior wash</p><a class="btn btn-small" href="#" onclick="bookWash('Express Wash');return false">Book</a></div>
+</div>
+<div class="book-form-wrap" id="washBooking" style="display:none">
+<h3>Book Carwash</h3>
+<form id="washForm">
+<div class="form-row"><div class="form-group"><label>Name *</label><input name="name" required="" type="text"/></div><div class="form-group"><label>Phone *</label><input name="phone" required="" type="tel"/></div></div>
+<div class="form-row"><div class="form-group"><label>Car</label><input name="car" type="text"/></div><div class="form-group"><label>Package</label><input id="washSvc" name="service" readonly="" type="text"/></div></div>
+<div class="form-row"><div class="form-group"><label>Date</label><input name="date" type="date"/></div><div class="form-group"><label>Time</label><input name="time" type="time"/></div></div>
+<button class="btn btn-primary btn-full" type="submit">Book Now</button>
+</form>
+</div></div>
+</section>
+<section class="section shop-section" id="shop">
+<div class="container"><div class="section-header"><span class="tag">🛒 Shop</span><h2>Car Accessories</h2><p>Browse our range. Order via WhatsApp.</p></div>
+<div class="cat-filter" id="catFilter">
+<button class="cat-btn active" data-cat="all">All</button>
+<button class="cat-btn" data-cat="fresheners">Fresheners</button>
+<button class="cat-btn" data-cat="covers">Seat Covers</button>
+<button class="cat-btn" data-cat="mats">Floor Mats</button>
+<button class="cat-btn" data-cat="electronics">Electronics</button>
+<button class="cat-btn" data-cat="care">Car Care</button>
+</div>
+<div class="products-grid" id="productsGrid">
+<div class="product" data-cat="fresheners"><div class="product-img">Air Freshener</div><h4>Premium Car Freshener</h4><p>Long-lasting scent</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Premium%20Car%20Freshener" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="covers"><div class="product-img">Seat Covers</div><h4>Leather Seat Covers</h4><p>Universal fit, premium leather</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Leather%20Seat%20Covers" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="mats"><div class="product-img">Floor Mats</div><h4>Rubber Floor Mats</h4><p>Heavy-duty, custom fit</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Rubber%20Floor%20Mats" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="electronics"><div class="product-img">Dash Cam</div><h4>HD Dash Camera</h4><p>1080p, night vision, loop recording</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20HD%20Dash%20Camera" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="care"><div class="product-img">Car Wax</div><h4>Premium Car Wax</h4><p>Long-lasting shine and protection</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Premium%20Car%20Wax" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="electronics"><div class="product-img">Phone Mount</div><h4>Magnetic Phone Mount</h4><p>360° rotation, strong hold</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Phone%20Mount" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="covers"><div class="product-img">Steering Cover</div><h4>Steering Wheel Cover</h4><p>Anti-slip, comfortable grip</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Steering%20Cover" target="_blank">Order on WhatsApp</a></div>
+<div class="product" data-cat="care"><div class="product-img">Car Shampoo</div><h4>Foam Car Shampoo</h4><p>pH neutral, high foam</p><a class="btn btn-small" href="https://wa.me/254742290939?text=Hi%2C%20I'm%20interested%20in%20Car%20Shampoo" target="_blank">Order on WhatsApp</a></div>
+</div></div>
+</section>
+<section class="section deals-section" id="deals">
+<div class="container"><div class="section-header light"><span class="tag">🎁 Deals</span><h2>Wash + Accessories Combos</h2></div>
+<div class="deals-grid">
+<div class="deal"><h3>Fresh &amp; Clean</h3><p>Full Valet + 2 Air Fresheners</p><span class="deal-save">Save 20%</span></div>
+<div class="deal featured"><h3>Full Makeover</h3><p>Premium Detail + Seat Covers + Floor Mats</p><span class="deal-save">Best Value</span></div>
+<div class="deal"><h3>Tech Upgrade</h3><p>Basic Wash + Dash Cam + Phone Mount</p><span class="deal-save">Save 15%</span></div>
+</div></div>
+</section>
+<section class="section" id="contact">
+<div class="container"><div class="section-header"><span class="tag">📍</span><h2>Find Us in Karen</h2></div>
+<div class="contact-grid">
+<div class="map"><iframe height="350" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955!2d36.7!3d-1.32" style="border:0;border-radius:12px" width="100%"></iframe></div>
+<div class="contact-info">
+<div class="ci"><h4>📍</h4><p>Karen, Nairobi</p></div>
+<div class="ci"><h4>📞</h4><p><a href="tel:+254742290939">+254 742 290939</a></p></div>
+<div class="ci"><h4>🕐</h4><p>Mon–Sun 8:00AM – 8:00PM</p></div>
+<a class="btn btn-primary btn-full" href="https://wa.me/254742290939" target="_blank">💬 WhatsApp</a>
+</div>
+</div></div>
+</section>
+<footer class="footer"><div class="container"><p>© 2024 Karnett Carwash &amp; Accessories Karen. <a href="admin.html">Admin</a></p></div></footer>
+<a class="whatsapp-float" href="https://wa.me/254742290939" target="_blank"><svg fill="white" height="28" viewbox="0 0 24 24" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.685-1.367A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.678-6.293-1.843l-.44-.282-3.065.894.826-3.14-.293-.454A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></svg></a>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body></html>
